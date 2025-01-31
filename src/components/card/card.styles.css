@@ -1,6 +1,8 @@
 .card-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #95dada;
   border: 1px solid grey;
   border-radius: 5px;
@@ -14,4 +16,10 @@
 
 .card-container:hover {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    padding: 10px;
+  }
 }
